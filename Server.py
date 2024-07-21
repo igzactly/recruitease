@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,json
 import admin.admin_model as admin_model
 from admin.admin import admin
-from opportunities.opportunities import opportunities
+#from opportunities.opportunities import opportunities
 import base64
 from flask_session import Session
 from flask import session
@@ -13,7 +13,7 @@ STATIC_FOLDER = 'templates/assets'
 
 app = Flask(__name__,static_folder=STATIC_FOLDER)
 app.register_blueprint(admin)
-app.register_blueprint(opportunities)
+#app.register_blueprint(opportunities)
 
 
 
