@@ -40,4 +40,4 @@ if(__name__=='__main__'):
 	app.config["AZURE_CONTAINER"]=config["AZURE_CREDS"]["AZURE_STORAGE_CONTAINER"]
 	app.config["STORAGE_ACCOUNT_NAME"]=config["AZURE_CREDS"]["STORAGE_ACCOUNT_NAME"]
 	app.config["STORAGE_ACCOUNT_KEY"]=config["AZURE_CREDS"]["STORAGE_ACCOUNT_KEY"]
-	app.run(debug=True)
+	app.run(host=0.0.0.0,port=5000,debug=True)
